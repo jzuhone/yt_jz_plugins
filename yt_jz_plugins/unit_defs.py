@@ -1,16 +1,6 @@
 import numpy as np
 import yt
 
-from yt.units import dimensions
-from yt.utilities.physical_ratios import sec_per_day, sec_per_hr, cm_per_km
-
-grams_per_pound = 453.59237
-cm_per_ft = 30.48
-cm_per_mile = cm_per_ft*5280.0
-cc_per_us_pint = 473.176473
-erg_per_calorie = 4.184e7
-g0 = 9.80665e2
-
 # Angle units
 
 yt.define_unit("revolution", (2.0*np.pi, "radian"))
@@ -29,7 +19,7 @@ yt.define_unit("g0", (9.80665e2, "cm/s**2"))
 # Metric units
 
 yt.define_unit("L", (1000.0, "cm**3"), prefixable=True)
-yt.define_unit("tonne", (1.0, "Mg"))
+yt.define_unit("t", (1.0, "Mg"), prefixable=True)
 
 # Imperial units
 
