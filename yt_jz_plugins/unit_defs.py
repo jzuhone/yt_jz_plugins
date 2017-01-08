@@ -26,7 +26,8 @@ yt.define_unit("t", (1.0, "Mg"), prefixable=True)
 yt.define_unit("inch", (1.0/12.0, "ft"))
 yt.define_unit("yard", (3.0, "ft"))
 yt.define_unit("slug", (1.0, "lbf*s**2/ft"))
-yt.define_unit("ton", (2000.0, "lbm"))
+yt.define_unit("ton_US", (2000.0, "lbm"))
+yt.define_unit("ton_GB", (2240.0, "lbm"))
 yt.define_unit("oz", (1.0/16.0, "lbm"))
 yt.define_unit("mph", (1.0, "mile/hr"))
 yt.define_unit("psi", (1.0, "lbf/inch**2"))
@@ -38,6 +39,12 @@ yt.define_unit("fl_oz_US", (1.0/16.0, "pt_US"))
 yt.define_unit("cp_US", (0.5, "pt_US"))
 yt.define_unit("qt_US", (2.0, "pt_US"))
 yt.define_unit("gal_US", (8.0, "pt_US"))
+
+# GB volumes
+
+yt.define_unit("pt_GB", (568.26125, "mL"))
+yt.define_unit("qt_GB", (2.0, "pt_GB"))
+yt.define_unit("gal_GB", (8.0, "pt_GB"))
 
 # Nautical
 
